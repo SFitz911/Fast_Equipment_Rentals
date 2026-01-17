@@ -31,7 +31,7 @@ export default function EquipmentSelection() {
                     backgroundImage: `url(${item.image})`,
                   }}
                 ></div>
-                <div className="absolute top-4 right-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
+                <div className="absolute top-4 right-4 bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
                   {item.price}
                 </div>
                 <div className="absolute top-4 left-4">
