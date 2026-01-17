@@ -16,7 +16,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <Image
-              src="/images/logos/logo_2.0.png"
+              src="/images/logos/fast-equipment-rentals-transparent.png"
               alt="Fast Equipment Rentals Logo"
               width={3000}
               height={900}

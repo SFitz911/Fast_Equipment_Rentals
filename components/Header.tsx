@@ -15,7 +15,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/logos/logo_2.0.png"
+                src="/images/logos/fast-equipment-rentals-transparent.png"
                 alt="Fast Equipment Rentals"
                 width={400}
                 height={120}
