@@ -45,7 +45,7 @@ export default function Header() {
             </a>
             <Link
               href="/book"
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md"
+              className="bg-red-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-red-700 transition shadow-md"
             >
               Book Now
             </Link>

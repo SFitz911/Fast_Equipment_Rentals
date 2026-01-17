@@ -54,7 +54,7 @@ export default function Testimonials() {
         </div>
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">Had a great experience with us?</p>
-          <button className="text-blue-600 font-semibold hover:text-blue-700 transition">
+          <button className="text-red-600 font-semibold hover:text-red-700 transition">
             Leave us a 5-star review
           </button>
         </div>

@@ -87,7 +87,7 @@ export default function EquipmentPage() {
 
                     {/* Price */}
                     <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-lg font-bold text-blue-600">
+                      <div className="text-lg font-bold text-red-600">
                         {item.price}
                       </div>
                     </td>
@@ -97,7 +97,7 @@ export default function EquipmentPage() {
                       {item.status === 'available' ? (
                         <Link
                           href="/book"
-                          className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition"
+                          className="inline-flex items-center px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 transition"
                         >
                           Book Now
                         </Link>
@@ -121,7 +121,7 @@ export default function EquipmentPage() {
         <div className="mt-8">
           <Link
             href="/"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
+            className="inline-flex items-center text-red-600 hover:text-red-700 font-semibold"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />

@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 text-yellow-600 mb-6">
                 {benefit.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
