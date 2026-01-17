@@ -11,21 +11,21 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-800">
       <Hero />
-      {/* Logo Section */}
-      <section className="py-12 bg-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center">
-            <Image
-              src="/images/logos/fast-equipment-rentals-transparent.png"
-              alt="Fast Equipment Rentals Logo"
-              width={3000}
-              height={900}
-              className="h-[768px] w-auto object-contain"
-              priority
-            />
-          </div>
-        </div>
-      </section>
+          {/* Equipment Image Section */}
+          <section className="py-12 bg-gray-800">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-center">
+                <Image
+                  src="/images/equipment/3.png"
+                  alt="Equipment"
+                  width={1200}
+                  height={800}
+                  className="max-w-full h-auto object-contain rounded-lg shadow-lg"
+                  priority
+                />
+              </div>
+            </div>
+          </section>
       <HowItWorks />
       <EquipmentSelection />
       <WhyChooseUs />
