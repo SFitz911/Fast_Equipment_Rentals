@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-800">
       <Hero />
       {/* Logo Section */}
       <section className="py-12 bg-gray-800">
