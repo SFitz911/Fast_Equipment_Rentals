@@ -21,8 +21,8 @@ export default function EquipmentPage() {
           <p className="text-lg text-gray-300">Complete list of available equipment for rent</p>
         </div>
 
-        {/* Table */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+        {/* Desktop Table View */}
+        <div className="hidden lg:block bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
@@ -85,9 +85,9 @@ export default function EquipmentPage() {
                       )}
                     </td>
 
-                    {/* Price */}
+                    {/* Price - Yellow Box */}
                     <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-lg font-bold text-red-600">
+                      <div className="inline-flex bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
                         {item.price}
                       </div>
                     </td>
@@ -115,6 +115,71 @@ export default function EquipmentPage() {
               </tbody>
             </table>
           </div>
+        </div>
+
+        {/* Mobile Card View */}
+        <div className="lg:hidden space-y-4">
+          {equipmentData.map((item) => (
+            <div
+              key={item.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 p-4"
+            >
+              {/* Equipment Name & Type */}
+              <div className="mb-3">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">{item.name}</h3>
+                <p className="text-sm text-gray-500">{item.type}</p>
+              </div>
+
+              {/* Description */}
+              <p className="text-sm text-gray-600 mb-4">{item.description}</p>
+
+              {/* Status, Price, and Action - Horizontal Layout for Mobile */}
+              <div className="flex flex-wrap items-center gap-3 mb-3">
+                {/* Status Box */}
+                {item.status === 'available' ? (
+                  <div className="inline-flex flex-col bg-green-50 border border-green-200 rounded-lg px-3 py-2 flex-shrink-0">
+                    <span className="text-xs font-semibold text-green-700 uppercase mb-0.5">
+                      Available
+                    </span>
+                    <span className="text-xs text-green-900 font-medium">
+                      {formatDate(item.availableDate)}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="inline-flex flex-col bg-red-50 border border-red-200 rounded-lg px-3 py-2 flex-shrink-0">
+                    <span className="text-xs font-semibold text-red-700 uppercase mb-0.5">
+                      Rented
+                    </span>
+                    <span className="text-xs text-red-900 font-medium">
+                      Until {formatDate(item.rentedDate)}
+                    </span>
+                  </div>
+                )}
+
+                {/* Price - Yellow Box */}
+                <div className="inline-flex bg-yellow-400 text-black px-3 py-2 rounded-lg font-bold text-base shadow-lg flex-shrink-0">
+                  {item.price}
+                </div>
+
+                {/* Action Button */}
+                {item.status === 'available' ? (
+                  <Link
+                    href="/book"
+                    className="inline-flex items-center px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 transition flex-shrink-0"
+                  >
+                    Book Now
+                  </Link>
+                ) : (
+                  <button
+                    disabled
+                    className="inline-flex items-center px-4 py-2 bg-gray-300 text-gray-500 text-sm font-semibold rounded-lg cursor-not-allowed flex-shrink-0"
+                  >
+                    Unavailable
+                  </button>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Back to Home */}
