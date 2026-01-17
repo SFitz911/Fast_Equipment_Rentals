@@ -18,11 +18,11 @@ export default function Contact() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Contact Us
             </h2>
           </div>
@@ -30,7 +30,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-8">Get In Touch</h3>
+              <h3 className="text-2xl font-semibold text-white mb-8">Get In Touch</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -41,8 +41,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
-                    <p className="text-gray-600">Your City, ST</p>
+                    <h4 className="font-semibold text-white mb-1">Address</h4>
+                    <p className="text-gray-300">Your City, ST</p>
                   </div>
                 </div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
+                    <h4 className="font-semibold text-white mb-1">Phone</h4>
                     <a href="tel:+1234567890" className="text-red-600 hover:text-red-700">
                       (123) 456-7890
                     </a>
@@ -67,7 +67,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
+                    <h4 className="font-semibold text-white mb-1">Email</h4>
                     <a href="mailto:info@fastequipment.com" className="text-red-600 hover:text-red-700">
                       info@fastequipment.com
                     </a>
@@ -81,8 +81,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
-                    <p className="text-gray-600">24/7 - Always Available</p>
+                    <h4 className="font-semibold text-white mb-1">Business Hours</h4>
+                    <p className="text-gray-300">24/7 - Always Available</p>
                   </div>
                 </div>
               </div>
@@ -90,13 +90,13 @@ export default function Contact() {
 
             {/* Service Areas */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-8">Service Areas</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-2xl font-semibold text-white mb-8">Service Areas</h3>
+              <p className="text-gray-300 mb-6">
                 We proudly serve your area and the following surrounding communities:
               </p>
 
               <div className="mb-8">
-                <h4 className="font-semibold text-gray-900 mb-4">Primary Service Areas:</h4>
+                <h4 className="font-semibold text-white mb-4">Primary Service Areas:</h4>
                 <div className="flex flex-wrap gap-3">
                   {serviceAreas.map((area, index) => (
                     <span
@@ -110,12 +110,12 @@ export default function Contact() {
               </div>
 
               <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-4">Extended Service Areas:</h4>
+                <h4 className="font-semibold text-white mb-4">Extended Service Areas:</h4>
                 <div className="flex flex-wrap gap-3">
                   {extendedAreas.map((area, index) => (
                     <span
                       key={index}
-                      className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium"
+                      className="bg-gray-700 text-gray-200 px-4 py-2 rounded-full text-sm font-medium"
                     >
                       {area}
                     </span>
@@ -123,7 +123,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-300 text-sm">
                 Need equipment outside these areas?{' '}
                 <a href="/contact" className="text-red-600 hover:text-red-700 font-semibold">
                   Contact us

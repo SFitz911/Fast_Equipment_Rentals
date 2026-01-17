@@ -15,13 +15,13 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             What Our Customers Say
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Real feedback from professionals like you.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Testimonials() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">Had a great experience with us?</p>
+          <p className="text-gray-300 mb-4">Had a great experience with us?</p>
           <button className="text-red-600 font-semibold hover:text-red-700 transition">
             Leave us a 5-star review
           </button>

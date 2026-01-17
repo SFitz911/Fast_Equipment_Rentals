@@ -31,13 +31,13 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Why Choose Fast Equipment Rentals?
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Your trusted partner for equipment rentals.
           </p>
         </div>
@@ -47,10 +47,10 @@ export default function WhyChooseUs() {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 text-yellow-600 mb-6">
                 {benefit.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 {benefit.description}
               </p>
             </div>
