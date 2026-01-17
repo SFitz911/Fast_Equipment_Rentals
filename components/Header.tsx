@@ -17,9 +17,9 @@ export default function Header() {
               <Image
                 src="/images/logos/fast-equipment-rentals-transparent.png"
                 alt="Fast Equipment Rentals"
-                width={400}
-                height={120}
-                className="h-24 w-auto object-contain"
+                width={350}
+                height={105}
+                className="h-20 w-auto object-contain"
                 priority
               />
             </Link>
