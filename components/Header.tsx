@@ -71,23 +71,35 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-4">
-              <Link href="/" className="text-gray-300 hover:text-white font-medium">
+          <div className="md:hidden py-4 border-t border-gray-700">
+            <div className="flex flex-col items-end space-y-3">
+              <Link 
+                href="/" 
+                className="w-full sm:w-auto text-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition border border-red-800 shadow-md"
+              >
                 Home
               </Link>
-              <Link href="/equipment" className="text-gray-300 hover:text-white font-medium">
+              <Link 
+                href="/equipment" 
+                className="w-full sm:w-auto text-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition border border-red-800 shadow-md"
+              >
                 Equipment
               </Link>
-              <Link href="/contact" className="text-gray-300 hover:text-white font-medium">
+              <Link 
+                href="/contact" 
+                className="w-full sm:w-auto text-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition border border-red-800 shadow-md"
+              >
                 Contact
               </Link>
-              <a href="tel:+1234567890" className="text-gray-300 hover:text-white font-semibold">
+              <a 
+                href="tel:+1234567890" 
+                className="w-full sm:w-auto text-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition border border-red-800 shadow-md"
+              >
                 (123) 456-7890
               </a>
               <Link
                 href="/book"
-                className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition text-center"
+                className="w-full sm:w-auto text-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition border border-red-800 shadow-md"
               >
                 Book Now
               </Link>
